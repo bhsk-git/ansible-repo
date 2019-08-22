@@ -1,0 +1,15 @@
+---
+ - name: Launching aws ec2 instance
+   hosts: localhost
+   connection: local
+   become: False
+   gather_facts: false
+   tasks:
+   - name: Launching ec2 instance
+     ec2:
+      instance_type: t2.micro
+      image: ami-ff48629a
+      key_name: AWS_Centos_Key
+      region: us-east-2
+      count: 2
+      monitoring: no
