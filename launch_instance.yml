@@ -11,5 +11,5 @@
       image: ami-ff48629a
       key_name: AWS_Centos_Key
       region: us-east-2
-      count: 2
+      count: 1
       monitoring: no
